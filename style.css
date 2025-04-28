@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     z-index: 2;
+    scroll-behavior: smooth;
 }
 body {
     background: linear-gradient(to right, #e2dee2, #725694);
@@ -47,7 +48,6 @@ nav{
     filter: brightness(60%);
 }
 
-
 .right ul{
     display: flex;
     justify-content: space-between;
@@ -73,10 +73,11 @@ nav{
    padding-top: 120px;
 }
 .leftsec{
-    width: 30%;
-    font-size: 3rem;
+    width: 40%;
+    font-size: 3.5rem;
     color: rgb(28, 20, 20);
     font-weight: bold;
+    
 }
 .rigthsec{
     width: 30%;
@@ -96,9 +97,13 @@ nav{
     color: rgb(86, 81, 81);
 }
 .second{
-    max-width: 100vh;
-    margin-left: 130px;
+    /* width: 100vh; */
+    
+    margin: 35px 130px;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+
 }
 main hr{
     border: 0;
@@ -110,9 +115,12 @@ main hr{
     font-size: 1.6rem;
 }
 .box{
-    width: 20vw;
+    width: 18vw;
     margin: 56px 0;
     box-shadow:5px 5px 5px grey,-5px,-5px,;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .vertical{
@@ -125,6 +133,8 @@ main hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    height: 60px;
 
 }
 .skilz{
@@ -133,27 +143,26 @@ main hr{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 80vw;
-    padding-left: 70px;
     margin-top: 2vh;
     background-color: #403a47e0;
-    
- 
+    border-radius: 20px;
+    width: 60vw; 
 }
+
 .box img {
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
 }
 .box img:hover {
-    width: 90px;
-    height: 90px;
+    scale: 1.5;
     cursor: pointer;
+    transition: ease-in 0.2s;
 }
 .leftthird{
     width: 70vw;
     margin: 0 50px;
-    background-color: #2e303b;
+    background-color: black;
     padding: 20px;
 }
 .rightthird{
@@ -165,6 +174,7 @@ main hr{
     display: flex;
     background-color: black;
     margin: 0 110px;
+    border-radius: 30px;
 }
 
 .proj{
@@ -179,13 +189,16 @@ main hr{
     display: flex;
     border: 2px solid rgb(107, 128, 134);
     margin: 8px 0;
+    padding:20px;
+    border-radius: 10px;
+    
 }
 .txt p{
     color: rgb(210, 194, 194);
     padding: 3% 0;
 }
 .txt{
-    padding: 20px;
+    padding: 10px;
 }
 .txt h2{
     color: white;
@@ -271,6 +284,8 @@ footer{
     box-shadow: 0 0 15px rgb(124, 123, 122);
     color: white;
     z-index: 999;
+    height: 70px;
+    cursor: pointer;
 }
 .l1 h1{
     font-size: 20px;
@@ -300,7 +315,7 @@ footer{
 }
 @keyframes fizz {
     0%{
-        transform: translateY(-500px) scale(0.2);
+        transform: translateY(-10px) scale(0.2);
         opacity: 0;
         filter: blur(20px);
     }
